@@ -1,0 +1,16 @@
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\Facebuild.Contracts.dll.config
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\Facebuild.Contracts.dll
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\Facebuild.Contracts.pdb
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\EntityFramework.dll
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\EntityFramework.xml
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\obj\Debug\Facebuild.Contracts.csprojAssemblyReference.cache
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\obj\Debug\Facebuild.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\obj\Debug\Facebuild.Contracts.csproj.CopyComplete
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\obj\Debug\Facebuild.Contracts.dll
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Contracts\obj\Debug\Facebuild.Contracts.pdb

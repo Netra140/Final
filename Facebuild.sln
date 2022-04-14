@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30711.63
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebuild.Data", "Facebuild.Data\Facebuild.Data.csproj", "{661A8DA5-3EE0-4035-A1A4-A8106E8CE013}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebuild.Models", "Facebuild.Models\Facebuild.Models.csproj", "{AB7A8283-0A73-4EB5-9A31-EB60EE3A4EBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebuild.Services", "Facebuild.Services\Facebuild.Services.csproj", "{D643B4AB-F677-408F-A6A2-105E57B0BE99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebuild.Contracts", "Facebuild.Contracts\Facebuild.Contracts.csproj", "{7C59B3F2-E109-48D8-866A-2327ED51D8D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebuild.Tests", "Facebuild.Tests\Facebuild.Tests.csproj", "{0445FD7B-62FA-4E34-A581-68F70F6BAC61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebuild.NeoMvc", "Facebuild.NeoMvc\Facebuild.NeoMvc.csproj", "{3C83D265-9DED-4230-85B3-1CAC38C55D80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{661A8DA5-3EE0-4035-A1A4-A8106E8CE013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{661A8DA5-3EE0-4035-A1A4-A8106E8CE013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{661A8DA5-3EE0-4035-A1A4-A8106E8CE013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{661A8DA5-3EE0-4035-A1A4-A8106E8CE013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB7A8283-0A73-4EB5-9A31-EB60EE3A4EBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB7A8283-0A73-4EB5-9A31-EB60EE3A4EBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB7A8283-0A73-4EB5-9A31-EB60EE3A4EBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB7A8283-0A73-4EB5-9A31-EB60EE3A4EBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D643B4AB-F677-408F-A6A2-105E57B0BE99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D643B4AB-F677-408F-A6A2-105E57B0BE99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D643B4AB-F677-408F-A6A2-105E57B0BE99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D643B4AB-F677-408F-A6A2-105E57B0BE99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C59B3F2-E109-48D8-866A-2327ED51D8D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C59B3F2-E109-48D8-866A-2327ED51D8D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C59B3F2-E109-48D8-866A-2327ED51D8D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C59B3F2-E109-48D8-866A-2327ED51D8D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0445FD7B-62FA-4E34-A581-68F70F6BAC61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0445FD7B-62FA-4E34-A581-68F70F6BAC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0445FD7B-62FA-4E34-A581-68F70F6BAC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0445FD7B-62FA-4E34-A581-68F70F6BAC61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C83D265-9DED-4230-85B3-1CAC38C55D80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C83D265-9DED-4230-85B3-1CAC38C55D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C83D265-9DED-4230-85B3-1CAC38C55D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C83D265-9DED-4230-85B3-1CAC38C55D80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72EA7B0C-A625-4FA9-955A-CE6C719ABAE4}
+	EndGlobalSection
+EndGlobal
