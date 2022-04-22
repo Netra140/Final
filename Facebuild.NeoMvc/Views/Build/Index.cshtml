@@ -1,54 +1,69 @@
 ﻿@model IEnumerable<Facebuild.Models.BuildListItem>
+@using Microsoft.AspNet.Identity
+@using Facebuild.Services
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<head>
+    <style></style>
+</head>
+<body style="background-image: url(../../Assets/dirt_block.jpeg); background-repeat:repeat;">
+    <div style="background-image: url(../../Assets/obsidian.jpeg); text-align:center;padding:15px; align-content:center; margin:20px; border-radius: 15px; border: 5px solid black;">
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-@if (TempData.ContainsKey("SaveResult"))
-{
-    <div class="alert alert-success fade in" role="alert">
-        @ViewBag.SaveResult
-        <button type="button" class="close" data-dismiss="alert">
-            <span>&times;</span>
-        </button>
-    </div>
-}
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.BuildId)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreatedUtc)
-        </th>
-        <th></th>
-    </tr>
+        <img src="~/Assets/Build_Menu.png" style="display:block;margin-left:auto;margin-right:auto"/>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.BuildId)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreatedUtc)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.BuildId }) |
-            @Html.ActionLink("Details", "Details", new { id = item.BuildId }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.BuildId })
-        </td>
-    </tr>
-}
+        <p>
+            @Html.ActionLink("Create New", "Create")
+        </p>
+        @if (TempData.ContainsKey("SaveResult"))
+        {
+            <div class="alert alert-success fade in" role="alert">
+                @ViewBag.SaveResult
+                <b>Database Updated</b>
+                <button type="button" class="close" data-dismiss="alert">
+                    <span>&times;</span>
+                </button>
+            </div>
+        }
+        <a href="./?sort=_likes">Sort By Likes</a> | <a href="./?sort=_created">Sort By Date</a>
+        </div>
 
-</table>
+        @foreach (var item in Model)
+        {
+            <div style="background-image: url(../../Assets/snow_block.png); padding:15px; align-content:center; margin:20px; border-radius: 15px; border: 5px solid black;">
+                <tr>
+                    <!--<td>
+                        @Html.DisplayFor(modelItem => item.BuildId)
+                    </td>-->
+                    <td>
+                        <h1>@Html.DisplayFor(modelItem => item.Name)</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="@Url.Action("Details", "Build", new { id = item.BuildId })"><img src="@Url.Content(item.Photo)" width="100%" alt="Image" align="middle" /></a>
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CreatedUtc)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Likes: @Html.DisplayFor(modelItem => item.Likes)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="@Url.Action("Edit", "Build", new { id = item.BuildId })"><img src=~/Assets/pencil.png width="20" alt="Edit" align="middle" /></a> |
+                        <a href="@Url.Action("Delete", "Build", new { id = item.BuildId })"><img src=~/Assets/x.png width="20" alt="Delete" align="middle" /></a> |
+                        <a href="@Url.Action("Create", "Comment", new { id = item.BuildId })"><img src=~/Assets/chat.png width="20" alt="Comment" align="middle" /></a> |
+                        <a href="@Url.Action("Create", "Like", new { id = item.BuildId })"><img src=~/Assets/like.png width="20" alt="Like" align="middle" /></a>
+                    </td>
+                </tr>
+            </div>
+        }
+
+        </table>
+</body>

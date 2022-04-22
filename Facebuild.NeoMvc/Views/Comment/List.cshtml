@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Facebuild.Models.Comments.CommentListItem>
+
+@{
+    ViewBag.Title = "List";
+}
+<head>
+    <base target="_parent">
+</head>
+
+<h2>Comments</h2>
+<style>
+    .navbar {
+        display: none !important;
+    }
+</style>
+<body style="background-image: url(../../Assets/stone_block.jpeg); background-repeat:repeat;">
+    <table class="table">
+        <tr>
+            <th width=" 700">
+                @Html.DisplayNameFor(model => model.Content)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedUtc)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+    <tr style="background-image: url(../../Assets/snow_block.png); padding:15px; align-content:center; margin:20px; border-radius: 15px; border: 5px solid black;">
+        <td>
+            @Html.DisplayFor(modelItem => item.Content)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedUtc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.id)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.id })
+            @Html.ActionLink("Delete", "Delete", new { id = item.id })
+        </td>
+    </tr>
+        }
+
+    </table>
+</body>

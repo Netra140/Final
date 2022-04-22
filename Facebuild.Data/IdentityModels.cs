@@ -3,6 +3,7 @@ using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using Facebuild.Data.Pallets;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -33,6 +34,12 @@ namespace Facebuild.Data
         }
 
         public DbSet<Build> Build { get; set; }
+
+        public DbSet<Comment> Comment { get; set; }
+
+        public DbSet<Like> Like { get; set; }
+
+        public DbSet<Pallet> Pallet { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -1,58 +1,60 @@
 ﻿@model Facebuild.Models.BuildDetail
+@using Microsoft.AspNet.Identity
+@using Facebuild.Services
 
 @{
     ViewBag.Title = "Details";
 }
+<body style="background-image: url(../../Assets/dirt_block.jpeg); background-repeat:repeat;">
 
-<h2>Details</h2>
+    <div>
+        <div style="padding: 25px; background-image: url(../../Assets/snow_block.png); padiving:15px; align-content:center; margin:20px; border-radius: 15px; border: 5px solid black;">
 
-<div>
-    <h4>BuildDetail</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.BuildId)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.BuildId)
-        </dd>
+            <h1>
+                @Html.DisplayFor(model => model.Name)
+            </h1>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+            <div>
+                @Html.DisplayFor(model => model.BuildId)
+            </div>
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.CreatedUtc)
-        </dt>
+            <div>
+                <img src="@Html.ValueFor(model => model.Photo)" width="100%" alt="Image" style="margin-left:auto;margin-right:auto;" />
 
-        <dd>
-            @Html.DisplayFor(model => model.CreatedUtc)
-        </dd>
+            </div>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ModifiedUtc)
-        </dt>
 
-        <dd>
-            @Html.DisplayFor(model => model.ModifiedUtc)
-        </dd>
+            <div>
+                @Html.DisplayFor(model => model.Description)
+            </div>
 
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.BuildId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+            <div>
+                @Html.DisplayFor(model => model.CreatedUtc)
+            </div>
+            <!--Html.DisplayFor(model => model.PalletId)-->
+        </div>
+
+        <div style="padding: 25px; background-image: url(../../Assets/obsidian.png); padiving:15px; align-content:center; margin:20px; border-radius: 15px; border: 5px solid black;">
+
+            <iframe style="border-color=black;border-radius=10px;border-style=solid;" src="@Html.ValueFor(model => model.iframeSrcComments)" width="49.5%" height="500"></iframe>
+            <!--<a href="Html.ValueFor(model => model.iframeSrc)">Link to pallet</a>-->
+            <iframe src="@Html.ValueFor(model => model.iframeSrc)" width="49.5%" height="500"></iframe>
+        </div>
+            @{
+                CommentService comServ = new CommentService(Guid.Parse(User.Identity.GetUserId()), int.Parse(Html.ValueFor(model => model.BuildId).ToString()));
+                var Comments = comServ.GetComments(int.Parse(Html.ValueFor(model => model.BuildId).ToString()));
+                foreach (var item in Comments)
+                {
+                    //Html.DisplayFor(comments => comments.Description);
+                }
+            }
+
+
+        </div>
+
+</body>

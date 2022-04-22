@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Facebuild.Data.Pallets;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,5 +13,6 @@ namespace Facebuild.Models
         public string Name { get; set; }
         public string Photo { get; set; }
         public string Description { get; set; }
+        public Pallet pallet { get; set; }
     }
 }

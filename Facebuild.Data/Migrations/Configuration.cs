@@ -10,7 +10,6 @@ namespace Facebuild.Data.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "Facebuild.Data.ApplicationDbContext";
         }
 
         protected override void Seed(Facebuild.Data.ApplicationDbContext context)

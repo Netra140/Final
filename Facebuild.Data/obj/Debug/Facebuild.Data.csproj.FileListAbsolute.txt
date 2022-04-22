@@ -14,9 +14,6 @@ C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.
 C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.csproj.CopyComplete
 C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.dll
 C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.pdb
-C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.Migrations.InitialCreate.resources
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.Migrations.PalletIdBuildMatch.resources
 C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.csproj.GenerateResource.cache
-C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.Migrations.InitialMigration.resources
-C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.Migrations.RemovedRequirements.resources
-C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.Migrations.PhotgraphImplementation.resources
-C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.Migrations.UndoAttemptUno.resources
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Data\obj\Debug\Facebuild.Data.Migrations.IframeSrcVar.resources

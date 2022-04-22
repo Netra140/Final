@@ -12,10 +12,17 @@ namespace Facebuild.Models
         public int BuildId { get; set; }
         public string Name { get; set; }
         public string Photo { get; set; }
+        public BuildSheet buildSheet { get; set; }
         public string Description { get; set; }
-        [Display(Name="Created")]
+        public string iframeSrc { get; set; }
+        public string iframeSrcComments { get; set; }
+        public int PalletId { get; set; }
+        [Display(Name = "Created")]
         public DateTimeOffset CreatedUtc { get; set; }
-        [Display(Name="Modified")]
+        [Display(Name = "Modified")]
         public DateTimeOffset? ModifiedUtc { get; set; }
+        public BuildDetail () {
+            buildSheet = new BuildSheet(BuildId);
+        }
     }
 }

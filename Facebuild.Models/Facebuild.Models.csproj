@@ -58,11 +58,32 @@
     <Compile Include="BuildDetail.cs" />
     <Compile Include="BuildEdit.cs" />
     <Compile Include="BuildListItem.cs" />
+    <Compile Include="BuildSheet.cs" />
+    <Compile Include="Comments\CommentCreate.cs" />
+    <Compile Include="Comments\CommentDetail.cs" />
+    <Compile Include="Comments\CommentEdit.cs" />
+    <Compile Include="Comments\CommentListItem.cs" />
+    <Compile Include="Likes\LikeCreate.cs" />
+    <Compile Include="Likes\LikeDelete.cs" />
+    <Compile Include="Likes\LikeDetail.cs" />
+    <Compile Include="Likes\LikeEdit.cs" />
+    <Compile Include="Likes\LikeListItem.cs" />
+    <Compile Include="Pallets\PalletCreate.cs" />
+    <Compile Include="Pallets\PalletDetail.cs" />
+    <Compile Include="Pallets\PalletEdit.cs" />
+    <Compile Include="Pallets\PalletListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Facebuild.Data\Facebuild.Data.csproj">
+      <Project>{661a8da5-3ee0-4035-a1a4-a8106e8ce013}</Project>
+      <Name>Facebuild.Data</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,0 +1,770 @@
+﻿@model Facebuild.Models.Pallets.PalletDetail
+
+@{
+    ViewBag.Title = "Delete";
+}
+<body style="background-image: url(../../Assets/dirt_block.jpeg); background-repeat:repeat;">
+    <div style="background-image: url(../../Assets/obsidian.jpeg); color: white; text-align:center;padding:15px; align-content:center; margin:20px; border-radius: 15px; border: 5px solid black;">
+    <h3>Are you sure you want to delete this?</h3>
+    <div>
+        <h4>PalletDetail</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.BuildId)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.BuildId)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.userId)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.userId)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Stone)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Stone)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Granite)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Granite)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Diorite)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Diorite)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Andesite)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Andesite)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Deepslate)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Deepslate)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Calcite)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Calcite)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Tuff)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Tuff)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Dripstone)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Dripstone)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Grass)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Grass)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Dirt)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Dirt)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Podzol)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Podzol)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Warped_Nylium)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Warped_Nylium)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Crimson_Nylium)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Crimson_Nylium)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Oak)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Oak)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Spruce)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Spruce)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Birch)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Birch)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Jungle)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Jungle)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Acacia)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Acacia)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Dark_Oak)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Dark_Oak)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Mangrove)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Mangrove)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Crimson_Wood)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Crimson_Wood)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Warped_Wood)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Warped_Wood)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Bedrock)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Bedrock)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Sand)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Sand)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Red_Sand)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Red_Sand)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Gravel)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Gravel)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Stone_Ores)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Stone_Ores)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Deepslate_Ores)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Deepslate_Ores)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Nether_Ores)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nether_Ores)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Block)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Block)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Raw_Iron)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Raw_Iron)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Raw_Copper)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Raw_Copper)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Raw_Gold)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Raw_Gold)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Amethyst)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Amethyst)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Iron)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Iron)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Gold)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Gold)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Diamond)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Diamond)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Netherite)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Netherite)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Copper)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Copper)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Exposed_Copper)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Exposed_Copper)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Weathered_Copper)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Weathered_Copper)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Oxidised)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Oxidised)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Sponge)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Sponge)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Wet_Sponged)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Wet_Sponged)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Glass)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Glass)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Tinted_Glass)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Tinted_Glass)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Lapis_Lazuli)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Lapis_Lazuli)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Sandstone)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Sandstone)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Wool)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Wool)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Smooth_Stone)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Smooth_Stone)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Bricks)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Bricks)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Bookshelf)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Bookshelf)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Mossy_Cobblestone)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Mossy_Cobblestone)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Obsidian)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Obsidian)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Purpur)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Purpur)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Ice)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Ice)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Snow)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Snow)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Clay)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Clay)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Pumpkin)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Pumpkin)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Netherrack)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Netherrack)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Soul_Sand)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Soul_Sand)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Basalt)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Basalt)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Glowstone)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Glowstone)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Stone_Brick)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Stone_Brick)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Deepslate_Brick)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Deepslate_Brick)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Melon)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Melon)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Mycelium)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Mycelium)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Nether_Bricks)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nether_Bricks)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.End_Stone)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.End_Stone)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.End_Stone_Brick)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.End_Stone_Brick)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Emerald)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Emerald)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Quartz)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Quartz)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Terracotta)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Terracotta)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Hay_Bale)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Hay_Bale)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Packed_Ice)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Packed_Ice)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Stained_Glass)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Stained_Glass)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Prismarine)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Prismarine)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Prismarine_Brick)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Prismarine_Brick)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Dark_Prismarine)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Dark_Prismarine)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Sea_Lantern)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Sea_Lantern)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Magma_Block)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Magma_Block)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Nether_Wart)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nether_Wart)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Red_Nether_Brick)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Red_Nether_Brick)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Bone_Block)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Bone_Block)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Concrete)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Concrete)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Concrete_Powder)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Concrete_Powder)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Coral)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Coral)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Blue_Ice)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Blue_Ice)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Dried_Kelp)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Dried_Kelp)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Crying_Obsidian)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Crying_Obsidian)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Blackstone)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Blackstone)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" class="btn btn-default" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+        </div>
+    </body>

@@ -55,28 +55,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Build.cs" />
+    <Compile Include="Comment.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202204072348279_InitialCreate.cs" />
-    <Compile Include="Migrations\202204072348279_InitialCreate.Designer.cs">
-      <DependentUpon>202204072348279_InitialCreate.cs</DependentUpon>
+    <Compile Include="Like.cs" />
+    <Compile Include="Migrations\202204220017108_PalletIdBuildMatch.cs" />
+    <Compile Include="Migrations\202204220017108_PalletIdBuildMatch.Designer.cs">
+      <DependentUpon>202204220017108_PalletIdBuildMatch.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202204080037178_InitialMigration.cs" />
-    <Compile Include="Migrations\202204080037178_InitialMigration.Designer.cs">
-      <DependentUpon>202204080037178_InitialMigration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204140813012_RemovedRequirements.cs" />
-    <Compile Include="Migrations\202204140813012_RemovedRequirements.Designer.cs">
-      <DependentUpon>202204140813012_RemovedRequirements.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204140900297_PhotgraphImplementation.cs" />
-    <Compile Include="Migrations\202204140900297_PhotgraphImplementation.Designer.cs">
-      <DependentUpon>202204140900297_PhotgraphImplementation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202204140918074_UndoAttemptUno.cs" />
-    <Compile Include="Migrations\202204140918074_UndoAttemptUno.Designer.cs">
-      <DependentUpon>202204140918074_UndoAttemptUno.cs</DependentUpon>
+    <Compile Include="Migrations\202204220839017_IframeSrcVar.cs" />
+    <Compile Include="Migrations\202204220839017_IframeSrcVar.Designer.cs">
+      <DependentUpon>202204220839017_IframeSrcVar.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Pallet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -84,20 +75,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202204072348279_InitialCreate.resx">
-      <DependentUpon>202204072348279_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202204220017108_PalletIdBuildMatch.resx">
+      <DependentUpon>202204220017108_PalletIdBuildMatch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204080037178_InitialMigration.resx">
-      <DependentUpon>202204080037178_InitialMigration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204140813012_RemovedRequirements.resx">
-      <DependentUpon>202204140813012_RemovedRequirements.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204140900297_PhotgraphImplementation.resx">
-      <DependentUpon>202204140900297_PhotgraphImplementation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202204140918074_UndoAttemptUno.resx">
-      <DependentUpon>202204140918074_UndoAttemptUno.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202204220839017_IframeSrcVar.resx">
+      <DependentUpon>202204220839017_IframeSrcVar.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

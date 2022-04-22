@@ -14,3 +14,6 @@ C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Models\obj\Debug\Facebuil
 C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Models\obj\Debug\Facebuild.Models.csproj.CopyComplete
 C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Models\obj\Debug\Facebuild.Models.dll
 C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Models\obj\Debug\Facebuild.Models.pdb
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Models\bin\Debug\Facebuild.Data.dll
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Models\bin\Debug\Facebuild.Data.pdb
+C:\Users\Ethan\source\repos\Facebuild.WebMVC\Facebuild.Models\bin\Debug\Facebuild.Data.dll.config

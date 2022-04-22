@@ -1,4 +1,5 @@
-﻿using Facebuild.Models;
+﻿using Facebuild.Data.Pallets;
+using Facebuild.Models;
 using Facebuild.Services;
 using Microsoft.AspNet.Identity;
 using System;
@@ -13,11 +14,27 @@ namespace Facebuild.WebMVC.Controllers
     public class BuildController : Controller
     {
         // GET: Build
-        public ActionResult Index()
-        {
+        public ActionResult Index(string sort, string filter)
+        {//?sort=_created
             var userId = Guid.Parse(User.Identity.GetUserId());
             var service = new BuildService(userId);
             var model = service.GetBuilds();
+            switch (sort)
+            {
+                case "_created":
+                        model = model.OrderByDescending(BuildListItem => BuildListItem.CreatedUtc);
+                    break;
+                case "_alphabet":
+                    model = model.OrderBy(BuildListItem => BuildListItem.Name);
+                    break;
+                case "_likes":
+                    model = model.OrderByDescending(BuildListItem => BuildListItem.Likes);
+                    break;
+                default:
+                    model = model.OrderByDescending(BuildListItem => BuildListItem.CreatedUtc);
+                    break;
+
+            }
 
             return View(model);
         }
@@ -37,13 +54,16 @@ namespace Facebuild.WebMVC.Controllers
             }
 
             var userId = Guid.Parse(User.Identity.GetUserId());
-
+            
             var service = new BuildService(userId);
 
             service.CreateBuild(model);
 
+            IEnumerable<BuildListItem> buildings = service.GetBuilds();
+            buildings = buildings.OrderByDescending(BuildListItem => BuildListItem.CreatedUtc);
+            int link = buildings.First().BuildId;
 
-            return RedirectToAction("Index");
+            return Redirect("../Pallet/Create/" + link);
         }
 
         public ActionResult Details(int id)
@@ -53,7 +73,7 @@ namespace Facebuild.WebMVC.Controllers
 
             return View(model);
         }
-
+        [HttpGet]
         public ActionResult Edit(int id)
         {
             var service = CreateBuildService();
@@ -64,6 +84,21 @@ namespace Facebuild.WebMVC.Controllers
                     BuildId = detail.BuildId,
                     Name = detail.Name,
                     Description = detail.Description
+                };
+            return View(model);
+        }
+
+        public ActionResult AddPallet(int id, Pallet pal)
+        {
+            var service = CreateBuildService();
+            var detail = service.GetBuildById(id);
+            var model =
+                new BuildEdit
+                {
+                    BuildId = detail.BuildId,
+                    Name = detail.Name,
+                    Description = detail.Description,
+                    pallet = pal
                 };
             return View(model);
         }
@@ -82,9 +117,12 @@ namespace Facebuild.WebMVC.Controllers
         public ActionResult DeletePost (int id)
         {
             var service = CreateBuildService();
+            string iFrame = service.GetBuildById(id).iframeSrc;
+            iFrame = iFrame.TrimStart(new char[] { '.','.','/','.','.','/','P','a','l','l','e','t','/','D','e','t','a','i','l','s','/'});
+            int palletId = int.Parse(iFrame);
             service.DeleteBuild(id);
             TempData["SaveResult"] = "Your build was deleted";
-            return RedirectToAction ("Index");
+            return RedirectToAction ("../Pallet/Delete/" + palletId);
         }
 
         [HttpPost]

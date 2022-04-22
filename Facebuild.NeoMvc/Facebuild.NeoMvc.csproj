@@ -169,8 +169,11 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BuildController.cs" />
+    <Compile Include="Controllers\CommentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LikeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\PalletController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -180,6 +183,19 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Build_Menu.png" />
+    <Content Include="Assets\chat.png" />
+    <Content Include="Assets\deepslate_tiles.jpeg" />
+    <Content Include="Assets\dirt_block.jpeg" />
+    <Content Include="Assets\FacebuildLogo.png" />
+    <Content Include="Assets\like.png" />
+    <Content Include="Assets\obsidian.jpeg" />
+    <Content Include="Assets\pencil.png" />
+    <Content Include="Assets\quartz_block.jpeg" />
+    <Content Include="Assets\ShareCreations.png" />
+    <Content Include="Assets\snow_block.png" />
+    <Content Include="Assets\stone_block.jpeg" />
+    <Content Include="Assets\x.png" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -201,6 +217,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Views\Build\BuildStyle.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -239,10 +256,26 @@
     <Content Include="Views\Build\Delete.cshtml" />
     <Content Include="Views\Build\Details.cshtml" />
     <Content Include="Views\Build\Edit.cshtml" />
-    <Content Include="Views\Build\Index.cshtml" />
+    <Content Include="Views\Build\Index.cshtml">
+      <BrowseToURL>~/Build/Index</BrowseToURL>
+    </Content>
+    <Content Include="Views\Comment\Create.cshtml" />
+    <Content Include="Views\Comment\Delete.cshtml" />
+    <Content Include="Views\Comment\Edit.cshtml" />
+    <Content Include="Views\Comment\Details.cshtml" />
+    <Content Include="Views\Pallet\Create.cshtml" />
+    <Content Include="Views\Like\Create.cshtml" />
+    <Content Include="Views\Like\Delete.cshtml" />
+    <Content Include="Views\Like\Index.cshtml" />
+    <Content Include="Views\Pallet\Details.cshtml" />
+    <Content Include="Views\Comment\List.cshtml" />
+    <Content Include="Views\Like\List.cshtml" />
+    <Content Include="Views\Pallet\Edit.cshtml" />
+    <Content Include="Views\Pallet\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Pallets\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
